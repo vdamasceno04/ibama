@@ -23,5 +23,3 @@ void Menu::setValores()
 	selecionado = pressionado = false;
 	fonte.loadFromFile("Assets/MainFont.ttf");
 }
-
-

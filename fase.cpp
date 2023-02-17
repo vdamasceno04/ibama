@@ -86,28 +86,36 @@ void Fases::Fase::fimFase() {
     }
     if (!javalivivo) {
         fim = true;
-        Ente::operator+=(400);
+     /*   Ente::operator+=(400);
         if (doisJogadores) 
             Ente::setPontos(j1.getVida() * 1000);
-        Ente::setPontos(e1.getVida() * 1000);
+        Ente::setPontos(e1.getVida() * 1000);*/
 
     }
     if (fim) {
         estado = -1;
         for (i = 0; i < listaMov.getLen(); i++)
         {
-            delete listaMov.getItem(i);
+            if (listaMov.getItem(i)->getId() != 1 || listaMov.getItem(i)->getId() != 2) {
+                delete listaMov.getItem(i);
+            }
         }
         for (i = 0; i < listaEst.getLen(); i++)
         {
             delete listaEst.getItem(i);
         }
+        listaEst.limpaLista();
+        listaMov.limpaLista();
+        cout << listaEst.getLen() << " estat" << endl;
+        cout << listaMov.getLen() << " moveis" << endl;
+        pGG->centerView(Math::CoordF(WIDTH / 2, HEIGHT / 2));
     }
 }
 
 void Fases::Fase::finaliza() {
     j1.resetar();
     e1.resetar();
+    pGG->centerView(Math::CoordF(WIDTH / 2, HEIGHT / 2));
 }
 
 void Fases::Fase::criachao(bool vermelho)

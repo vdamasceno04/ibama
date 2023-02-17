@@ -71,6 +71,9 @@ void Fases::FlorestaVerde::inicializar() {
 void Fases::FlorestaVerde::executar() {
     atualizaView();
     listaEst.executarLista();
+    cout << listaEst.getLen() << " moveis" << endl;
+    cout << listaMov.getLen() << " estat" << endl;
+
     listaMov.executarLista();
     colidir();
     fimFase();

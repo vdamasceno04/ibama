@@ -12,7 +12,6 @@ protected:
 	int pos;
 	bool selecionado;
 	bool pressionado;
-
 	sf::Font fonte;
 	sf::Texture textura;
 	sf::Sprite sprite;

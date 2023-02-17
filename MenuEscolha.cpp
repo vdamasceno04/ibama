@@ -46,21 +46,22 @@ void MenuEscolha::desenhar()
 void MenuEscolha::loop()
 {
 	selecionado = false;
-
+	
 	//Click para baixo (seta pra baixo)
-	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::S)*/)) && !pressionado)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && !pressionado)
 	{
 		if (pos < 3)
 		{
-			pos++;
-			pressionado = true;
-			textos[pos].setOutlineThickness(4);
-			textos[pos - 1].setOutlineThickness(0);
-			pressionado = false;
+				pos++;
+				pressionado = true;
+					textos[pos].setOutlineThickness(4);
+					textos[pos - 1].setOutlineThickness(0);
+					pressionado = false;
+				
 		}
 	}
 	//Click para cima (seta pra cima)
-	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::W)*/)) && !pressionado)
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && !pressionado)
 	{
 		if (pos > 0)
 		{
@@ -72,7 +73,8 @@ void MenuEscolha::loop()
 		}
 	}
 
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) && !selecionado) {
+
+	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))) {
 		estado = -1;
 	}
 

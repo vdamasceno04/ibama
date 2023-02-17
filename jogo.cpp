@@ -37,7 +37,8 @@ void Jogo::executar() {
         else
             pGG->closeWindow();
         pGG->display();
-        cout << "ponto" << Ente::getPontuacao() << endl;
+
+  //      cout << "ponto" << Ente::getPontuacao() << endl;
     }
     /*system("clear||cls");
     string nome;

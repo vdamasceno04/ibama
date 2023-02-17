@@ -37,7 +37,7 @@ void ListaEntidades::setJanela(Gerenciadores::Graficos* pGG)
 void ListaEntidades::limpaLista() {
 
     while (objLE.getLen() != 0) {
-        removeEntidade(objLE.getItem(objLE.getLen()));
+        ListaEntidades::~ListaEntidades();
     }
 
 }

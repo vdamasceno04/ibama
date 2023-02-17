@@ -164,7 +164,7 @@
                 }
             }
         }
-        cout << "estado: " << pilhaEstados.top()->getId() << endl;
+     //   cout << "estado: " << pilhaEstados.top()->getId() << endl;
     }
 
    
