@@ -23,7 +23,7 @@ namespace Gerenciadores {
         Ente* criaestado(const ID id);
         void addEstado(const ID id);
         void removerEstado();
-        Ente* getEstadoAtual();
+        int getEstadoAtual();
         int tamanhoPilha();
     };
 }

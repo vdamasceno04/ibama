@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -152,6 +152,7 @@
     <ClCompile Include="florestavermelha.cpp" />
     <ClCompile Include="fundo.cpp" />
     <ClCompile Include="gerenciadorestados.cpp" />
+    <ClCompile Include="gerenciadoreventos.cpp" />
     <ClCompile Include="gosma.cpp" />
     <ClCompile Include="graficos.cpp" />
     <ClCompile Include="inimigo.cpp" />
@@ -185,6 +186,7 @@
     <ClInclude Include="florestavermelha.h" />
     <ClInclude Include="fundo.h" />
     <ClInclude Include="gerenciadorestados.h" />
+    <ClInclude Include="gerenciadorevento.h" />
     <ClInclude Include="gosma.h" />
     <ClInclude Include="graficos.h" />
     <ClInclude Include="inimigo.h" />

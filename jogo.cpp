@@ -1,17 +1,19 @@
 #include "jogo.h"
 #include<stdio.h>
 
-
 using std::ofstream;
 using std::string;
 using std::cerr;
 using std::fstream;
 
 using namespace Fases;
+
 Jogo::Jogo() :
     pGG(Graficos::getInstance()), pGC(GerenciadorColisoes::getInstancia(&Fase::listaMov, &Fase::listaEst)),
-    pGE(GerenciadorEstado::getGerenciadorEstado()) //singleton tudo isso aqui
+    pGE(GerenciadorEstado::getGerenciadorEstado()), pGV(GerenciadorEventos::getInstance()) //singleton tudo isso aqui
 {
+    pGV->setPEstado(GerenciadorEstado::getGerenciadorEstado());
+    pGV->setPGrafico(Graficos::getInstance());
     Ente::setpGG(Graficos::getInstance());
 
     pGE->addEstado(menuprincipal);
@@ -27,13 +29,11 @@ void Jogo::executar() {
     sf::Event event;
     while (pGG->isWindowOpen())
     {
-        while (pGG->getWindow()->pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                pGG->closeWindow();
-        }
-        if (pGE->tamanhoPilha() != 0)
+        if (pGE->tamanhoPilha() != 0) {
             pGE->executar();
+
+            pGV->executar();
+        }
         else
             pGG->closeWindow();
         pGG->display();

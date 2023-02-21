@@ -77,8 +77,8 @@
         }
     }
 
-    Ente* Gerenciadores::GerenciadorEstado::getEstadoAtual() {
-        return pilhaEstados.top();
+    int Gerenciadores::GerenciadorEstado::getEstadoAtual() {
+        return pilhaEstados.top()->getId();
     }
 
     int Gerenciadores::GerenciadorEstado::tamanhoPilha() {

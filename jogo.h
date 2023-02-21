@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include"gerenciadorestados.h"
+#include"gerenciadorevento.h"
 #include "florestaverde.h"
 #include "florestavermelha.h"
 #include "MenuPrincipal.h"
@@ -9,10 +9,11 @@
 
 using namespace Gerenciadores;
 
+
 class Jogo
 {
 private:
-  
+	GerenciadorEventos* pGV;
 	Graficos* pGG;
 	GerenciadorColisoes* pGC;
 	GerenciadorEstado* pGE;
