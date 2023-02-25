@@ -151,6 +151,7 @@
                     pilhaEstados.top()->setEstado(-2);
                     addEstado(fase22jog);
                 }
+
             }
 
             else if (pilhaEstados.top()->getId() == 12 || pilhaEstados.top()->getId() == 13 || pilhaEstados.top()->getId() == 22 || pilhaEstados.top()->getId() == 23) {

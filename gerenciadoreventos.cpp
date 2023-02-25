@@ -1,5 +1,6 @@
 #pragma once
 #include "gerenciadorevento.h"
+#include "gerenciadorestados.h"
 using namespace Gerenciadores;
 
 GerenciadorEventos* GerenciadorEventos::pGerenciadorEventos = nullptr;
@@ -34,27 +35,57 @@ void GerenciadorEventos::setPGrafico(Graficos* p) {
 }
 
 void GerenciadorEventos::executar() {
-
-    sf::Event evento;
-
     while (pGraficos->getWindow()->pollEvent(evento))
     {
-        if (evento.type == sf::Event::KeyPressed) {
-            TeclaPressionada(evento.key.code);
-        }
-        else if (evento.type == sf::Event::KeyReleased) {
-            TeclaSolta(evento.key.code);
-        }
-        else if (evento.type == sf::Event::Closed)
+        TeclaPressionada();
+        TeclaSolta();
+        if (evento.type == sf::Event::Closed)
             pGraficos->closeWindow();
     }
+
 }
 
-void GerenciadorEventos::TeclaSolta(sf::Keyboard::Key tecla) {
-    if (pGerenciadorEstado->getEstadoAtual() == menuprincipal)
-        cout << "menu";
-    //tratar casos
+bool GerenciadorEventos::TeclaSolta() {
+    if (evento.type == sf::Event::KeyReleased) {
+ //       cout << "sorto";
+        return true;
+    }
+    return false;
+
+}   
+
+bool GerenciadorEventos::TeclaPressionada() {
+     if (evento.type == sf::Event::KeyPressed){
+ //       cout << "aperto";
+        return true;
+     }
+     return false;
 }
-void GerenciadorEventos::TeclaPressionada(sf::Keyboard::Key tecla) {
-    //tratar casos
+
+sf::Keyboard::Key GerenciadorEventos::QualTecla() {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+        return sf::Keyboard::Escape;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter)) {
+        return sf::Keyboard::Enter;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+    //    cout << "cima";
+        return sf::Keyboard::Up;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
+   //     cout << "baixo";
+        return sf::Keyboard::Down;
+}
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+        return sf::Keyboard::Left;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+        return sf::Keyboard::Right;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+        return sf::Keyboard::A;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+        return sf::Keyboard::D;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+        return sf::Keyboard::W;
+
 }

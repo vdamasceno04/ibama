@@ -8,4 +8,5 @@ public:
 	void resetar();
 	void controlar();
 	void executar();
+	
 };

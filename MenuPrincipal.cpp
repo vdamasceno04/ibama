@@ -99,37 +99,27 @@ void MenuPrincipal::setValores()
 
 void MenuPrincipal::loop()
 {
-	selecionado = false;
-
-	//Click para baixo (S)
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::S)*/) && !pressionado)
+	if(pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Down)
 	{
 		if (pos < 2)
 		{
 			pos++;
-			pressionado = true;
 			textos[pos].setOutlineThickness(4);
 			textos[pos - 1].setOutlineThickness(0);
-			pressionado = false;
 		}
 	}
-	//Click para cima (W)
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::W)*/) && !pressionado)
+
+	if (pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Up)
 	{
 		if (pos > 0)
 		{
-			pressionado = true;
 			pos--;
 			textos[pos].setOutlineThickness(4);
 			textos[pos + 1].setOutlineThickness(0);
-			pressionado = false;
 		}
 	}
-	//Quando o objeto marcado for selecionado
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) || sf::Keyboard::isKeyPressed(sf::Keyboard::W)) && !selecionado)
+	if(pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Enter)
 	{
-		selecionado = true;
-
 		if (pos == 0)
 		{
 			estado = 1; // opcao para menu de escolha

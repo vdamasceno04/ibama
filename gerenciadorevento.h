@@ -1,7 +1,8 @@
 #pragma once
-#include "gerenciadorestados.h"
+#include"graficos.h"
 
 namespace Gerenciadores {
+	class GerenciadorEstado;
 	class GerenciadorEventos {
 	protected:
 		GerenciadorEventos();
@@ -9,12 +10,14 @@ namespace Gerenciadores {
 		static GerenciadorEventos* pGerenciadorEventos;
 		GerenciadorEstado* pGerenciadorEstado;
 		Graficos* pGraficos;
+		sf::Event evento;
 	public:
 		~GerenciadorEventos();
 		static GerenciadorEventos* getInstance();
 		void executar();
-		void TeclaSolta(sf::Keyboard::Key tecla);
-		void TeclaPressionada(sf::Keyboard::Key tecla);
+		bool TeclaSolta();
+		bool TeclaPressionada();
+		sf::Keyboard::Key QualTecla();
 		void setPEstado(GerenciadorEstado* p);
 		void setPGrafico(Graficos* p);
 	};

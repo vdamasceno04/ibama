@@ -92,7 +92,7 @@ void Fases::Fase::fimFase() {
         Ente::setPontos(e1.getVida() * 1000);*/
 
     }
-    if (fim) {
+    if (fim) {//deletando jogador quando ele morre?
         estado = -1;
         for (i = 0; i < listaMov.getLen(); i++)
         {
@@ -106,8 +106,6 @@ void Fases::Fase::fimFase() {
         }
         listaEst.limpaLista();
         listaMov.limpaLista();
-        cout << listaEst.getLen() << " estat" << endl;
-        cout << listaMov.getLen() << " moveis" << endl;
         pGG->centerView(Math::CoordF(WIDTH / 2, HEIGHT / 2));
     }
 }

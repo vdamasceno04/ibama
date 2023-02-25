@@ -10,8 +10,11 @@ int Ente::pontuacao = 0;
 Ente::~Ente() {}
 
 Gerenciadores::Graficos* Ente::pGG = NULL;
+Gerenciadores::GerenciadorEventos* Ente::pGV = NULL;
 
 void Ente::setpGG(Gerenciadores::Graficos* p) { pGG = p; }
+
+void Ente::setpGV(Gerenciadores::GerenciadorEventos* p) { pGV = p; }
 
 ID Ente::getId() { return id; }
 

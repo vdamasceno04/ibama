@@ -15,7 +15,7 @@ Jogo::Jogo() :
     pGV->setPEstado(GerenciadorEstado::getGerenciadorEstado());
     pGV->setPGrafico(Graficos::getInstance());
     Ente::setpGG(Graficos::getInstance());
-
+    Ente::setpGV(GerenciadorEventos::getInstance());
     pGE->addEstado(menuprincipal);
     executar();
 }
@@ -26,7 +26,6 @@ Jogo::~Jogo() {
 
 void Jogo::executar() {
     
-    sf::Event event;
     while (pGG->isWindowOpen())
     {
         if (pGE->tamanhoPilha() != 0) {

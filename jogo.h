@@ -1,11 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include"gerenciadorevento.h"
-#include "florestaverde.h"
-#include "florestavermelha.h"
-#include "MenuPrincipal.h"
-#include "MenuInterno.h"
-
+#include"gerenciadorestados.h"
 
 using namespace Gerenciadores;
 

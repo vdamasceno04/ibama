@@ -20,7 +20,7 @@ void MenuEscolha::setValores()
 	sprite.setTexture(textura);
 	opcao = { "Fase 1 - um jogador", "Fase 1 - dois jogadores", "Fase 2 - um jogador", "Fase 2 - dois jogadores" };
 	coordenadas = { {509.f,90.f}, {482.f,240.f}, {509.f,390.f}, {482.f,540.f} };
-	tamanhos = { 28,28,28,28 };
+	tamanhos = { 29,29,29,29 };
 
 	textos.resize(4); // São 4 opções
 	for (size_t i{}; i < textos.size(); ++i)
@@ -45,41 +45,34 @@ void MenuEscolha::desenhar()
 
 void MenuEscolha::loop()
 {
-	selecionado = false;
-	
-	//Click para baixo (seta pra baixo)
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && !pressionado)
+	if (pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Down)
 	{
 		if (pos < 3)
 		{
 				pos++;
-				pressionado = true;
-					textos[pos].setOutlineThickness(4);
-					textos[pos - 1].setOutlineThickness(0);
-					pressionado = false;
-				
+				textos[pos].setOutlineThickness(4);
+				textos[pos - 1].setOutlineThickness(0);
+
 		}
+		
 	}
-	//Click para cima (seta pra cima)
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && !pressionado)
+
+	if (pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Up)
 	{
 		if (pos > 0)
 		{
-			pressionado = true;
 			pos--;
 			textos[pos].setOutlineThickness(4);
 			textos[pos + 1].setOutlineThickness(0);
-			pressionado = false;
 		}
 	}
 
 
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))) {
+	if (pGV->QualTecla() == sf::Keyboard::Escape) {
 		estado = -1;
 	}
 
-
-	if ((sf::Keyboard::isKeyPressed(sf::Keyboard::E)) && !selecionado)
+	if(pGV->TeclaSolta() && pGV->QualTecla() == sf::Keyboard::Enter)
 	{
 		switch (pos)
 		{

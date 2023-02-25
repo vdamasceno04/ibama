@@ -1,6 +1,5 @@
 #pragma once
-#include "coords.h"
-#include "graficos.h"
+#include "gerenciadorevento.h"
 #include<iostream>
 using std::cout;
 using std::endl;
@@ -34,12 +33,14 @@ class Ente {
 protected:
 	ID id;
 	static Gerenciadores::Graficos* pGG;
+	static Gerenciadores::GerenciadorEventos* pGV;
 	int estado;
 private:
 	static int pontuacao;
 public:
 	Ente();
 	static void setpGG(Gerenciadores::Graficos* p);
+	static void setpGV(Gerenciadores::GerenciadorEventos* p);
 	ID getId();
 	static void setPontos(int pontos);
 	static int getPontuacao();
