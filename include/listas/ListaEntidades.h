@@ -1,6 +1,6 @@
 #pragma once
 #include "Lista.h"
-#include "entidade.h"
+#include "../entidades/entidade.h"
 
 namespace Listas {
 	class ListaEntidades {

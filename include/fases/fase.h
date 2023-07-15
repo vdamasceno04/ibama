@@ -1,18 +1,18 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-#include "ListaEntidades.h"
-#include "colisao.h"
-#include "cacador.h"
-#include "explorador.h"
-#include "graficos.h"
-#include "Espinho.h"
-#include "Agua.h"
-#include "plataforma.h"
-#include "abelha.h"
-#include "fundo.h"
-#include "javali.h"
-#include "caracol.h"
-#include "gosma.h"
+//#include <SFML/Graphics.hpp>
+#include "../listas/ListaEntidades.h"
+#include "../gerenciadores/colisao.h"
+#include "../entidades/personagens/jogadores/cacador.h"
+#include "../entidades/personagens/jogadores/explorador.h"
+#include "../gerenciadores/graficos.h"
+#include "../entidades/obstaculos/espinho.h"
+#include "../entidades/obstaculos/agua.h"
+#include "../entidades/obstaculos/plataforma.h"
+#include "../entidades/personagens/inimigos/abelha.h"
+#include "../entidades/fundo.h"
+#include "../entidades/personagens/inimigos/javali.h"
+#include "../entidades/personagens/inimigos/caracol.h"
+#include "../entidades/gosma.h"
 #include <iostream>
 
 
