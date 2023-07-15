@@ -1,4 +1,4 @@
-#include "explorador.h"
+#include "../include/entidades/personagens/jogadores/explorador.h"
 
 Explorador::Explorador(Math::CoordF pos) :Jogador(pos)
 {

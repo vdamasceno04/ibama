@@ -1,5 +1,5 @@
 #pragma once
-#include"ente.h"
+#include"../ente.h"
 #define HEIGHT 720
 #define WIDTH 1080
 #define GRAVIDADE 2.9

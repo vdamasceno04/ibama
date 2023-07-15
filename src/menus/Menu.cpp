@@ -1,4 +1,4 @@
-#include "Menu.h"
+#include "../include/menus/Menu.h"
 
 #define HEIGHT 720
 #define WIDTH 1280

@@ -1,4 +1,4 @@
-#include "MenuEscolha.h"
+#include "../include/menus/MenuEscolha.h"
 
 MenuEscolha::MenuEscolha() :
 	Menu()
@@ -22,7 +22,7 @@ void MenuEscolha::setValores()
 	coordenadas = { {509.f,90.f}, {482.f,240.f}, {509.f,390.f}, {482.f,540.f} };
 	tamanhos = { 29,29,29,29 };
 
-	textos.resize(4); // São 4 opções
+	textos.resize(4); // Sï¿½o 4 opï¿½ï¿½es
 	for (size_t i{}; i < textos.size(); ++i)
 	{
 		textos[i].setFont(fonte);

@@ -1,5 +1,5 @@
-#include "Espinho.h"
-#include "personagem.h"
+#include "../include/entidades/obstaculos/espinho.h"
+#include "../include/entidades/personagens/personagem.h"
 
 #define COOLDOWN 100
 Espinho::Espinho(Math::CoordF pos) :

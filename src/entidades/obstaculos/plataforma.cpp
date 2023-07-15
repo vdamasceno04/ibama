@@ -1,4 +1,4 @@
-#include "Plataforma.h"
+#include "../include/entidades/obstaculos/plataforma.h"
 
 Plataforma::Plataforma(Math::CoordF pos, bool verm) :
 	Obstaculo(pos)

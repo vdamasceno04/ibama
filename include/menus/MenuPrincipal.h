@@ -4,7 +4,7 @@
 #include "MenuLeaderboard.h"
 #include<map>
 #include<fstream>
-#define CAMINHO "./Assets/ranking.txt"
+#define CAMINHO "././Assets/ranking.txt"
 
 class MenuPrincipal : public Menu
 {

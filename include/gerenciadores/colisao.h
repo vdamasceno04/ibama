@@ -1,5 +1,5 @@
 #pragma once
-#include "ListaEntidades.h"
+#include "../listas/ListaEntidades.h"
 using namespace Entidades;
 
 namespace Gerenciadores {

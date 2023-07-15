@@ -1,7 +1,7 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-#include"gerenciadorevento.h"
-#include"gerenciadorestados.h"
+//#include <SFML/Graphics.hpp>
+#include"gerenciadores/gerenciadorevento.h"
+#include"gerenciadores/gerenciadorestados/gerenciadorestados.h"
 
 using namespace Gerenciadores;
 

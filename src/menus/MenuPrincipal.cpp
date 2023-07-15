@@ -1,4 +1,4 @@
-#include "MenuPrincipal.h"
+#include "../include/menus/MenuPrincipal.h"
 
 MenuPrincipal::MenuPrincipal() :
 	Menu()	
@@ -83,7 +83,7 @@ void MenuPrincipal::setValores()
 	coordenadas = { {153.f,280.f}, {102.f,410.f}, {166.f,532.f} };
 	tamanhos = { 32,32,32 };
 
-	textos.resize(3); // São 3 opções
+	textos.resize(3); // Sï¿½o 3 opï¿½ï¿½es
 	for (size_t i{}; i < textos.size(); ++i)
 	{
 		textos[i].setFont(fonte);

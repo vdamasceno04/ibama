@@ -1,4 +1,4 @@
-#include "colisao.h"
+#include "../include/gerenciadores/colisao.h"
 
 Gerenciadores::GerenciadorColisoes* Gerenciadores::GerenciadorColisoes::instancia = NULL;
 
@@ -29,7 +29,7 @@ void Gerenciadores::GerenciadorColisoes::ColidirEstaticoMovel()
     float intersec_x, intersec_y, dcentros_x, dcentros_y, dx, dy;
     int i, j;
 
-    //Colisão entre Entidades Moveis e Estaticas
+    //Colisï¿½o entre Entidades Moveis e Estaticas
     for (i = 0; i < listaEntidadesEstaticas->getLen(); i++)
     {
         for (j = 0; j < listaEntidadesMoveis->getLen(); j++)
@@ -65,7 +65,7 @@ void Gerenciadores::GerenciadorColisoes::ColidirEstaticoMovel()
 }
 
 void Gerenciadores::GerenciadorColisoes::ColidirMovelMovel(){
-    //Colisão entre Entidades Moveis
+    //Colisï¿½o entre Entidades Moveis
     Entidade* pAux1;
     Entidade* pAux2;
     float intersec_x, intersec_y, dcentros_x, dcentros_y, dx, dy;

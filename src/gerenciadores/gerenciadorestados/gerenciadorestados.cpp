@@ -1,4 +1,4 @@
-#include "gerenciadorestados.h"
+#include "../include/gerenciadores/gerenciadorestados/gerenciadorestados.h"
 
 
     Gerenciadores::GerenciadorEstado* Gerenciadores::GerenciadorEstado::pGerenciadorEstado = nullptr;
@@ -86,7 +86,7 @@
     }
 
     void Gerenciadores::GerenciadorEstado::executar() {
-        //executa o estado que está no topo da minha pilha
+        //executa o estado que estï¿½ no topo da minha pilha
         if (!pilhaEstados.empty()) {
             pilhaEstados.top()->executar();
             

@@ -1,4 +1,4 @@
-#include "fundo.h"
+#include "../include/entidades/fundo.h"
 
 Fundo::Fundo(Math::CoordF pos, bool d) : Entidade(pos)
 {

@@ -1,5 +1,5 @@
-#include "gosma.h"
-#include "caracol.h"
+#include "../include/entidades/gosma.h"
+#include "../include/entidades/caracol.h"
 
 #define VMAXX 15
 #define VMAXY -29.8

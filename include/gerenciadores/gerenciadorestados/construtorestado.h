@@ -3,7 +3,7 @@
 #include "estadojogar.h"
 
 #include "construtorfase.h"
-#include "MenuPrincipal.h"
+#include "../../menus/MenuPrincipal.h"
 
 
 class ConstrutorEstado {

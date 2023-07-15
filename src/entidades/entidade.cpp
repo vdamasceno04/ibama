@@ -1,4 +1,4 @@
-#include"entidade.h"
+#include"../include/entidades/entidade.h"
 using namespace Entidades;
 
 Entidade::Entidade(Math::CoordF pos): Ente() {

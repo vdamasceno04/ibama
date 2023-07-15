@@ -1,5 +1,5 @@
-#include "inimigo.h"
-#include "jogador.h"
+#include "../include/entidades/personagens/inimigos/inimigo.h"
+#include "../include/entidades/personagens/jogadores/jogador.h"
 #include <iostream>
 using std::cout;
 using std::endl;

@@ -1,5 +1,5 @@
 #pragma once
-#include"inimigo.h"
+#include"../inimigos/inimigo.h"
 #include <string>
 
 class ListaEntidades;

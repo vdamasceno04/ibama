@@ -1,5 +1,5 @@
-#include "abelha.h"
-#include "jogador.h"
+#include "../include/entidades/personagens/inimigos/abelha.h"
+#include "../include/entidades/personagens/jogadores/jogador.h"
 
 #define VMAXX 5.0
 #define ALCANCE 60

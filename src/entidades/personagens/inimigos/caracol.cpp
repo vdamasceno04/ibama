@@ -1,5 +1,5 @@
-#include "caracol.h"
-#include "jogador.h"
+#include "../include/entidades/personagens/inimigoscaracol.h"
+#include "../include/entidades/personagens/jogadores/jogador.h"
 
 #define ALCANCE 400
 #define VMAXX 0

@@ -1,4 +1,4 @@
-#include "cacador.h"
+#include "../include/entidades/personagens/jogadores/cacador.h"
 
 #define VIDA 20
 Cacador::Cacador(Math::CoordF pos) :

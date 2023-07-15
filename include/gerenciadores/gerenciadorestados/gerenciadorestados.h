@@ -1,10 +1,10 @@
 #include<stack>
-#include "graficos.h"
-#include"MenuLeaderboard.h"
-#include"MenuEscolha.h"
-#include"MenuPrincipal.h"
-#include"florestaverde.h"
-#include"florestavermelha.h"
+#include "../graficos.h"
+#include"../../menus/MenuLeaderboard.h"
+#include"../../menus/MenuEscolha.h"
+#include"../../menus/MenuPrincipal.h"
+#include"../../fases/florestaverde.h"
+#include"../../fases/florestavermelha.h"
 
 namespace Gerenciadores {
     class GerenciadorEstado {
@@ -14,7 +14,7 @@ namespace Gerenciadores {
     private:
         std::stack<Ente*> pilhaEstados;
 
-        //padrão de projeto singleton
+        //padrï¿½o de projeto singleton
         static GerenciadorEstado* pGerenciadorEstado;
     public:
         ~GerenciadorEstado();

@@ -1,4 +1,4 @@
-#include "graficos.h"
+#include "../include/gerenciadores/graficos.h"
 
 #include<cstring>
 #include<iostream>

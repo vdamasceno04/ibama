@@ -1,5 +1,5 @@
 #pragma once
-#include "ente.h"
+#include "../include/ente.h"
 
 Ente::Ente() {
 	this->id = vazio;

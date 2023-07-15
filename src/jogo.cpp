@@ -1,4 +1,4 @@
-#include "jogo.h"
+#include "../include/jogo.h"
 #include<stdio.h>
 
 using std::ofstream;

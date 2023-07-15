@@ -1,4 +1,4 @@
-#include "MenuInterno.h"
+#include "../include/menus/MenuInterno.h"
 
 MenuInterno::MenuInterno() :
 	Menu()
@@ -23,7 +23,7 @@ void MenuInterno::setValores()
 	coordenadas = { {509.f,90.f}, {482.f,240.f}, {509.f,390.f}, {482.f,540.f} };
 	tamanhos = { 28,28,28,28 };
 
-	textos.resize(4); // São 4 opções
+	textos.resize(4); // Sï¿½o 4 opï¿½ï¿½es
 	for (size_t i{}; i < textos.size(); ++i)
 	{
 		textos[i].setFont(fonte);
@@ -81,11 +81,11 @@ void MenuInterno::loop()
 			parar = false;
 			break;
 		case(1):
-			std::cout << "Não implementado ainda" << std::endl;
+			std::cout << "Nï¿½o implementado ainda" << std::endl;
 			parar = false;
 			break;
 		case(2):
-			std::cout << "Não implementado ainda" << std::endl;
+			std::cout << "Nï¿½o implementado ainda" << std::endl;
 			parar = false;
 			break;
 		case(3):			

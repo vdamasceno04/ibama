@@ -1,6 +1,6 @@
 #pragma once
-#include "ente.h"
-#include <SFML\Graphics.hpp>
+#include "./ente.h"
+//#include <SFML\Graphics.hpp>
 #include <iostream>
 #include<fstream>
 #include<string>

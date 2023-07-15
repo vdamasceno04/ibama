@@ -3,14 +3,14 @@
 #include"estado.h"
 
 //Gerenciador
-#include "graphics.h"
+#include "../graphics.h"
 
 //Fases
-#include "florestaverde.h"
-#include "florestavermelha.h"
+#include "../../fases/florestaverde.h"
+#include "../../fases/florestavermelha.h"
 
 //Jogador
-#include "jogador.h"
+#include "../../entidades/personagens/jogadores/jogador.h"
 
 //Construtor
 #include "construtorestado.h"

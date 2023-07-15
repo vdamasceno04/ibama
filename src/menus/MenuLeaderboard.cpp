@@ -1,4 +1,4 @@
-#include "MenuLeaderboard.h"
+#include "../include/menus/MenuLeaderboard.h"
 
 //Terminar Leaderboard depois
 
@@ -32,7 +32,7 @@ void MenuLeaderboard::setValores()
 			throw(caminho);
 	}
 	catch(string caminho)
-	{ // Se não abrir - criar
+	{ // Se nï¿½o abrir - criar
 			std::ofstream writeFile(caminho, std::ios::out | std::ios::trunc);
 			writeFile.close();
 	}

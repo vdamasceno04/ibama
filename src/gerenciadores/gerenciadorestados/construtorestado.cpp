@@ -1,4 +1,4 @@
-#include "construtorestado.h"
+#include "../include/gerenciadores/gerenciadorestados/construtorestado.h"
 
 
 ConstrutorEstado::ConstrutorEstado() {
