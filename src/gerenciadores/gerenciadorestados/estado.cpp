@@ -1,4 +1,4 @@
-#include "estado.h"
+#include "../include/gerenciadores/gerenciadorestados/estado.h"
 
 
 Estado::Estado(const ID ID) :
