@@ -1,4 +1,4 @@
-#include "../include/entidades/obstaculos/obstaculo.h"
+#include "../../../include/entidades/obstaculos/obstaculo.h"
 using namespace Obstaculos;
 
 Obstaculo::Obstaculo(Math::CoordF pos) :

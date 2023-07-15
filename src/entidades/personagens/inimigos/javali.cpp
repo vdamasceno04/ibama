@@ -1,5 +1,5 @@
-#include"../include/entidades/personagens/inimigos/javali.h"
-#include"../include/entidades/personagens/jogadores/jogador.h"
+#include"../../../../include/entidades/personagens/inimigos/javali.h"
+#include"../../../../include/entidades/personagens/jogadores/jogador.h"
 
 #define VMAXX 3.5
 #define ALCANCE 70

@@ -1,4 +1,4 @@
-#include "../include/entidades/obstaculos/pedra.h"
+#include "../../../include/entidades/obstaculos/pedra.h"
 
 Pedra::Pedra(Math::CoordF pos) :
 	Obstaculo(pos)

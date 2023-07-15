@@ -1,5 +1,5 @@
-#include "../include/entidades/obstaculos/agua.h"
-#include "../include/entidades/personagens/personagem.h"
+#include "../../../include/entidades/obstaculos/agua.h"
+#include "../../../include/entidades/personagens/personagem.h"
 
 
 #define LENTIDAO 0.2

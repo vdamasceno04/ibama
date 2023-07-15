@@ -1,4 +1,4 @@
-#include "../include/entidades/personagens/personagem.h"
+#include "../../../include/entidades/personagens/personagem.h"
 
 Personagem::Personagem(Math::CoordF pos):
 Entidade::Entidade(pos) {

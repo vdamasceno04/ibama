@@ -1,4 +1,4 @@
-#include"../include/entidades/personagens/jogadores/jogador.h"
+#include"../../../../include/entidades/personagens/jogadores/jogador.h"
 #include"ListaEntidades.h"
 
 #define COOLDOWN 30
