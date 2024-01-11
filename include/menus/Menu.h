@@ -1,5 +1,5 @@
 #pragma once
-#include "./ente.h"
+#include "../ente.h"
 //#include <SFML\Graphics.hpp>
 #include <iostream>
 #include<fstream>

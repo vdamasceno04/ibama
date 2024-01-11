@@ -14,9 +14,7 @@
 #include "../entidades/personagens/inimigos/caracol.h"
 #include "../entidades/gosma.h"
 #include <iostream>
-
-
-#include"pedra.h"
+#include"../entidades/obstaculos/pedra.h"
 
 using namespace std;
 

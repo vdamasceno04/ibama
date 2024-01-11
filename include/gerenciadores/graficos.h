@@ -1,6 +1,6 @@
 #pragma once
 #include "../coords.h"
-//#include <SFML/Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <map>
 
 namespace Gerenciadores {

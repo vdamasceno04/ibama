@@ -1,5 +1,5 @@
  #pragma once
-#include "Obstaculo.h"
+#include "obstaculo.h"
 
 class Plataforma : public Obstaculos::Obstaculo {
 private:

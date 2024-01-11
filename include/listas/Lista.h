@@ -5,7 +5,7 @@
 template <class TE>  class Lista
 {
 public:
-	template <class TE> class Elemento {
+	template <class U> class Elemento {
 	private:
 		Elemento<TE>* pProx;
 		TE* item;
