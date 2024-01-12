@@ -1,3 +1,4 @@
+/*
 #pragma once
 
 #include "estadojogar.h"
@@ -18,3 +19,5 @@ private:
     //Estado::Estado* criarLeaderboard();
 };
 
+
+*/
