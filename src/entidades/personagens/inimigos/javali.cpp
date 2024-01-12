@@ -8,7 +8,7 @@
 Javali::Javali(Math::CoordF pos, Jogador* p1, Jogador* p2, int i) :
 	Inimigo(pos, p1, p2) {
 	id = javali;
-	setSprite("Assets/javalimarrom.png");
+	setSprite("../Assets/javalimarrom.png");
 	sprite.setTextureRect(sf::IntRect(4, 4, 39, 30));
 	setTamanho(Math::CoordF(120, 110));
 	setEscala(Math::CoordF(4, 4));

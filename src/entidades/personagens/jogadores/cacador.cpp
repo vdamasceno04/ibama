@@ -4,7 +4,7 @@
 Cacador::Cacador(Math::CoordF pos) :
 	Jogador(pos) {
 	id = cacador;
-	setSprite("../../../Assets/Cacador.gif");
+	setSprite("../Assets/Cacador.gif");
 	sprite.setTextureRect(sf::IntRect(11, 11, 47, 59));
 }
 Cacador::~Cacador() {}

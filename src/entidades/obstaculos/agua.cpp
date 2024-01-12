@@ -10,7 +10,7 @@ Agua::Agua(Math::CoordF pos) :
 	id = agua;
 	lentidao = LENTIDAO;
 	setTamanho(Math::CoordF(100, 137));
-	setSprite("../../Assets/agua.png");
+	setSprite("../Assets/agua.png");
 	sprite.setTextureRect(sf::IntRect(0,5,60,60 ));
 	setPosicao(pos);
 	setEscala(Math::CoordF(3, 4));

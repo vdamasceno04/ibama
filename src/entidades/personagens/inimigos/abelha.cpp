@@ -9,7 +9,7 @@ Abelha::Abelha(Math::CoordF pos, Jogador* p1, Jogador* p2, int m) :
 	Inimigo(pos, p1, p2) {
 	id = abelha;
 
-	setSprite("Assets/abelha2.png");
+	setSprite("../Assets/abelha2.png");
 	sprite.setTextureRect(sf::IntRect(10, 1, 55, 59));
 	setTamanho(Math::CoordF(40, 76));
 	setEscala(Math::CoordF(2, 2));

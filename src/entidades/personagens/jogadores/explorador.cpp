@@ -3,7 +3,7 @@
 Explorador::Explorador(Math::CoordF pos) :Jogador(pos)
 {
 	id = explorador;
-	setSprite("../../../Assets/Explorador.png");
+	setSprite("../Assets/Explorador.png");
 	sprite.setTextureRect(sf::IntRect(11, 11, 47, 59));
 }
 
