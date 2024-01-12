@@ -1,4 +1,4 @@
-#include "../include/menus/MenuPrincipal.h"
+#include "../../include/menus/MenuPrincipal.h"
 
 MenuPrincipal::MenuPrincipal() :
 	Menu()	
@@ -77,7 +77,7 @@ void MenuPrincipal::insereNome() { //funcionalidade de registrar nome nao acabad
 void MenuPrincipal::setValores()
 {
 
-	textura.loadFromFile("Assets/Ibama.png");
+	textura.loadFromFile("../Assets/Ibama.png");
 	sprite.setTexture(textura);
 	opcao = { "Jogar", "Leaderboard", "Sair" };
 	coordenadas = { {153.f,280.f}, {102.f,410.f}, {166.f,532.f} };

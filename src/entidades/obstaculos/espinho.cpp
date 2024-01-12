@@ -9,7 +9,7 @@ Espinho::Espinho(Math::CoordF pos) :
 	dano = 1;
 	danificar = true;
 	duracaoCooldown = COOLDOWN;
-	setSprite("Assets/espinho.png");
+	setSprite("../../Assets/espinho.png");
 	setTamanho(Math::CoordF(67, 137));
 	setPosicao(pos);
 	setEscala(Math::CoordF(2, 2));

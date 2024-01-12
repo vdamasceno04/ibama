@@ -1,4 +1,4 @@
-#include "../include/gerenciadores/gerenciadorestados/gerenciadorestados.h"
+#include "../../../include/gerenciadores/gerenciadorestados/gerenciadorestados.h"
 
 
     Gerenciadores::GerenciadorEstado* Gerenciadores::GerenciadorEstado::pGerenciadorEstado = nullptr;

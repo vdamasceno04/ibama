@@ -1,4 +1,4 @@
-#include "../include/menus/Menu.h"
+#include "../../include/menus/Menu.h"
 
 #define HEIGHT 720
 #define WIDTH 1280
@@ -21,5 +21,5 @@ void Menu::setValores()
 {
 	pos = 0;
 	selecionado = pressionado = false;
-	fonte.loadFromFile("Assets/MainFont.ttf");
+	fonte.loadFromFile("../Assets/MainFont.ttf");
 }

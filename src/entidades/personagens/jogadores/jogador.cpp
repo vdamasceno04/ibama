@@ -1,5 +1,5 @@
 #include"../../../../include/entidades/personagens/jogadores/jogador.h"
-#include"ListaEntidades.h"
+#include"../../../../include/listas/ListaEntidades.h"
 
 #define COOLDOWN 30
 #define DANO 3

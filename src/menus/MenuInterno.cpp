@@ -1,4 +1,5 @@
-#include "../include/menus/MenuInterno.h"
+/*
+#include "../../include/menus/MenuInterno.h"
 
 MenuInterno::MenuInterno() :
 	Menu()
@@ -49,7 +50,7 @@ void MenuInterno::loop()
 	selecionado = false;
 
 	//Click para baixo (seta pra baixo)
-	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::S)*/)) && !pressionado)
+	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Down)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::S))) && !pressionado)
 	{
 		if (pos < 3)
 		{
@@ -61,7 +62,7 @@ void MenuInterno::loop()
 		}
 	}
 	//Click para cima (seta pra cima)
-	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Up)/* || sf::Keyboard::isKeyPressed(sf::Keyboard::W)*/)) && !pressionado)
+	if (((sf::Keyboard::isKeyPressed(sf::Keyboard::Up) || sf::Keyboard::isKeyPressed(sf::Keyboard::W))) && !pressionado)
 	{
 		if (pos > 0)
 		{
@@ -107,3 +108,5 @@ void MenuInterno::executar()
 	loop();
 	desenhar();
 }
+
+*/

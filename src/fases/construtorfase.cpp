@@ -10,7 +10,7 @@ ConstrutorFase::~ConstrutorFase() {
 }
 
 Fases::Fase* ConstrutorFase::criarFlorestaVerde() {
-Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::FlorestaVerde(Managers::Graphics::getInstance(), Managers::GerenciadorColisoes::getInstancia(&fase->listaMov, &fase->listaMov)));
+Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::FlorestaVerde(Gerenciadores::Graficos::getInstance(), Gerenciadores::GerenciadorColisoes::getInstancia(&fase->listaMov, &fase->listaMov)));
 if (fase == nullptr) {
     std::cout << "ConstrutorFase::nao foi possivel criar Fase Floresta vERDE" << std::endl;
     exit(1);

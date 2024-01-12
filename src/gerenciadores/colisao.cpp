@@ -1,4 +1,4 @@
-#include "../include/gerenciadores/colisao.h"
+#include "../../include/gerenciadores/colisao.h"
 
 Gerenciadores::GerenciadorColisoes* Gerenciadores::GerenciadorColisoes::instancia = NULL;
 

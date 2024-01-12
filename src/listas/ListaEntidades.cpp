@@ -1,4 +1,4 @@
-#include "../include/listas/ListaEntidades.h"
+#include "../../include/listas/ListaEntidades.h"
 using namespace Listas;
 
 

@@ -1,6 +1,6 @@
 #pragma once
-#include "../include/gerenciadores/gerenciadorevento.h"
-#include "../include/gerenciadores/gerenciadorestados.h"
+#include "../../include/gerenciadores/gerenciadorevento.h"
+#include "../../include/gerenciadores/gerenciadorestados/gerenciadorestados.h"
 using namespace Gerenciadores;
 
 GerenciadorEventos* GerenciadorEventos::pGerenciadorEventos = nullptr;

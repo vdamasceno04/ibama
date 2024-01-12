@@ -1,4 +1,4 @@
-#include "../include/fases/fase.h"
+#include "../../include/fases/fase.h"
 
 Fases::Fase::Fase(bool doisjogadores, Gerenciadores::Graficos* pG, Gerenciadores::GerenciadorColisoes* pC) :
    j1(), pGC(Gerenciadores::GerenciadorColisoes::getInstancia(&listaMov, &listaEst))

@@ -1,4 +1,4 @@
-#include "../include/menus/MenuLeaderboard.h"
+#include "../../include/menus/MenuLeaderboard.h"
 
 //Terminar Leaderboard depois
 
@@ -19,10 +19,10 @@ void MenuLeaderboard::setValores()
 {
 	//Abrir Arquivo e Colocar no vetor de Text
 
-    textura.loadFromFile("Assets/Escolha.png");
+    textura.loadFromFile("../../Assets/Escolha.png");
     sprite.setTexture(textura);
 
-	caminho = ("Assets/ranking.txt");
+	caminho = ("../../Assets/ranking.txt");
 	std::ifstream arquivo;
 	try {
 		arquivo.open(caminho, std::ios::binary | std::ios::in);

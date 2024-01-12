@@ -6,9 +6,9 @@ Plataforma::Plataforma(Math::CoordF pos, bool verm) :
 	vermelho = verm;
 	id = plataforma;
 	if(vermelho)
-		setSprite("Assets/chaovermelho.png");
+		setSprite("../../Assets/chaovermelho.png");
 	else
-		setSprite("Assets/chaoverde.png");
+		setSprite("../../Assets/chaoverde.png");
 	setPosicao(pos);
 	setTamanho(Math::CoordF(67, 133));
 	setEscala(Math::CoordF(2, 2));
