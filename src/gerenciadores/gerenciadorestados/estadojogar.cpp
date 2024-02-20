@@ -1,4 +1,4 @@
-//#include "..\..\include\Estado\EstadoJogar.hpp"
+/*#include "../../include/gerenciadores/gerenciadorestados/estadojogar.h"
 
 namespace Jungle {
 
@@ -25,3 +25,4 @@ namespace Jungle {
     }
 
 }
+*/

@@ -12,7 +12,7 @@ Gosma::Gosma(Math::CoordF pos, int ven) : Entidades::Entidade(pos) {
 	vmax.x = VMAXX;
 	vmax.y = VMAXY;
 	setVelocidade(Math::CoordF(-vmax.x, vmax.y));
-	setSprite("Assets/gosma.png");
+	setSprite("../../Assets/gosma.png");
 	inicializar();
 }
 

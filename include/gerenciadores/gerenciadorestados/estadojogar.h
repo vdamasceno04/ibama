@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 
 #include"estado.h"
 
@@ -24,3 +24,4 @@ public:
     void executar();
 };
 
+*/

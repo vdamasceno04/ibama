@@ -1,7 +1,6 @@
 #pragma once
 #include "inimigo.h"
 #include "../../gosma.h"
-#include <math.h>
 class Caracol : public Inimigo {
 private:
 	int veneno;

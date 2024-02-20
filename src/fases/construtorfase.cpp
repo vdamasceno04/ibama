@@ -1,3 +1,4 @@
+/*
 #include "../../include/fases/construtorfase.h"
 
 
@@ -19,7 +20,7 @@ return fase;
 }
 
 Fases::Fase* ConstrutorFase::criarFlorestaVermelha() {
-Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::FlorestaVermelha(Managers::Graphics::getInstance(), Managers::GerenciadorColisoes::getInstancia(&fase->listaMov, &fase->listaMov)));
+Fases::Fase* fase = static_cast<Fases::Fase*>(new Fases::FlorestaVermelha(Gerenciadores::Graficos::getInstance(), Gerenciadores::GerenciadorColisoes::getInstancia(&fase->listaMov, &fase->listaMov)));
 if (fase == nullptr) {
     std::cout << "ConstrutorFase::nao foi possivel criar Fase Floresta Vermelha" << std::endl;
     exit(1);
@@ -50,3 +51,5 @@ break;
 fase->criafundo(true);
 return fase;
 }
+
+*/

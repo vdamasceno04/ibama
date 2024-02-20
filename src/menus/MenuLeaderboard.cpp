@@ -19,7 +19,7 @@ void MenuLeaderboard::setValores()
 {
 	//Abrir Arquivo e Colocar no vetor de Text
 
-    textura.loadFromFile("../../Assets/Escolha.png");
+    textura.loadFromFile("../Assets/Escolha.png");
     sprite.setTexture(textura);
 
 	caminho = ("../../Assets/ranking.txt");
