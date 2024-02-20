@@ -10,7 +10,7 @@ using namespace Fases;
 
 Jogo::Jogo() :
     pGG(Graficos::getInstance()), pGC(GerenciadorColisoes::getInstancia(&Fase::listaMov, &Fase::listaEst)),
-    pGE(GerenciadorEstado::getGerenciadorEstado()), pGV(GerenciadorEventos::getInstance()) //singleton tudo isso aqui
+    pGE(GerenciadorEstado::getGerenciadorEstado()), pGV(GerenciadorEventos::getInstance()), pGI(Input::getInstance()) //singleton tudo isso aqui
 {
     pGV->setPEstado(GerenciadorEstado::getGerenciadorEstado());
     pGV->setPGrafico(Graficos::getInstance());
@@ -30,7 +30,7 @@ void Jogo::executar() {
     {
         if (pGE->tamanhoPilha() != 0) {
             pGE->executar();
-
+            pGI->isPressed();
             pGV->executar();
         }
         else
